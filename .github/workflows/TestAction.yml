@@ -35,3 +35,7 @@ jobs:
     # Run ls using the runners shell
     - name: List files
       run: ls
+
+    - uses: actions/checkout@v2
+      with:
+        repository: NashGlover/actionLibrary
