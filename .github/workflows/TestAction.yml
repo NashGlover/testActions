@@ -26,6 +26,8 @@ jobs:
         repository: NashGlover/actionLibrary
         path: action_library
     - run: ls
+    - run: echo $GITHUB_SHA
+    - run: python action_library/test.py
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
