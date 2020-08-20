@@ -36,19 +36,3 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        
-    # Run ls using the runners shell
-    - name: List files
-      run: ls
-
-    - uses: actions/checkout@v2
-      with:
-        repository: NashGlover/actionLibrary
-        path: actions_library
-        
-        
-    - name: pwd
-      run: pwd
-    
-    - name: List GITHUB_WORKSPACE
-      run: ls $GITHUB_WORKSPACE
