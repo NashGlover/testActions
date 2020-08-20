@@ -21,6 +21,11 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        repository: NashGlover/actionLibrary
+        path: action_library
+    - run: ls
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
@@ -46,4 +51,4 @@ jobs:
       run: pwd
     
     - name: List GITHUB_WORKSPACE
-      run: $GITHUB_WORKSPACE
+      run: ls $GITHUB_WORKSPACE
