@@ -44,3 +44,6 @@ jobs:
         
     - name: pwd
       run: pwd
+    
+    - name: List GITHUB_WORKSPACE
+      run: $GITHUB_WORKSPACE
